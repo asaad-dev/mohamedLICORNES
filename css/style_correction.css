@@ -1,0 +1,182 @@
+/* tyles pour la page des licones */
+
+/* Correction Mohamed oct 2020 */
+
+/* les coueurs en variable */
+:root {
+    --rose_sombre: #c55394;
+    --rose_clair: #eb43a3;
+    --footer: #E577B5;
+    --noir: #000;
+    --blanc: #fff;
+    --noir_alpha: rgb(109, 109, 109, 0.9);
+}
+
+body {
+    background-image: url(../evaluation_docs/img/background.png);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    background-image: url(../evaluation_docs/img/rainbow.png);
+    color: var(--rose_sombre);
+    font-family: Courgette, cursive;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center top;
+    padding: 70px;
+    margin-bottom: 0;
+}
+
+h3 {
+    font-size: 2em;
+    font-weight: 300px;
+}
+a {
+    color: var(--blanc);
+    text-decoration: none;
+}
+
+h2, h3, h4, h5, h6 {
+    color: var(--rose_sombre);
+    font-family: Courgette, cursive;
+}
+
+/* les propriétés flex pour la page */
+.d-flex {
+    display: flex;
+}
+
+.flex-justify-content-sp-b {
+    justify-content: space-between;
+}
+
+.flex-justify-content-sp-a {
+    justify-content: space-around;
+}
+
+.flex-align-items-center {
+    align-items: center;
+}
+
+.p-15 {
+    padding: 15px;
+}
+
+/* pour une gouttière entre les éléments contenu dans l'élément qui a cette classe */
+.gap-15 {
+    grid-gap: 15px;
+}
+
+.gap-25 {
+    gap: 25px;
+}
+/* l'en-tête */
+header {
+    background: var(--rose_sombre);
+    height: 50px;
+}
+
+header > * {
+    color: var(--blanc);
+}
+
+header > h2 {
+    margin-left: 10px;
+}
+
+header > nav > a {
+    display: inline-block;
+    text-transform: uppercase;
+    transform: background-color 0.5s;
+}
+
+header > nav > a:hover {
+   background: var(--rose_clair);
+}
+
+#main {
+    width: 900px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px gray;
+    border-radius: 15px;
+    background: var(--blanc);
+}
+
+#main h3 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+#main p {
+    margin: 10px 0;
+}
+
+/* pour les images dans figure */
+#main #unicorns_list figure {
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+#main #unicorns_list figure img {
+    transition: transform 0.5s;
+}
+
+#main #unicorns_list figure img:hover {
+    transform: scale(1.5);
+}
+
+#main #unicorns_list figure figcaption {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 0;
+    background: var(--noir_alpha);
+    color: var(--blanc);
+    text-align: center;
+}
+
+.img-200 {
+    width: 200px;
+    /* margin: 0 10px; */
+}
+
+/* l'adresse et le formulaire */
+
+#contact > div  {
+    margin: 45px 0;
+}
+
+#contact h4 {
+    margin-bottom: 15px;
+    color: var(--rose_sombre);
+}
+
+form input, form button {
+    display: block;
+    padding: 10px 5px;
+}
+
+form input[type=email] {
+    width: 200px;
+}
+
+form button {
+    margin-top: 15px;
+    padding: 5px 15px;
+    border: var(--rose_clair) 1px solid;
+    background: var(--rose_sombre);
+    border-radius: 5px;
+    color: var(--blanc);
+}
+
+/* le pied de page */
+footer {
+    background: var(--footer);
+    color: var(--blanc);
+    text-align: right;
+    padding: 15px 10px;
+    margin-top: 100px;
+}

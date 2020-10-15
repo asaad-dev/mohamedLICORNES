@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Un jour, Une licorne</title>
+    <link rel="stylesheet" href="css/style_correction.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- typo -->
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <header class="d-flex flex-justify-content-sp-b flex-align-items-center">
+        <h2>MyUnicorn</h2>
+        <nav class="d-flex flex-align-items-center">
+            <a href="#principe" class="p-15">Le principe</a>
+            <a href="#licornes" class="p-15">Nos licornes</a>
+            <a href="#nous_trouver" class="p-15">Nous trouver</a>
+        </nav>
+    </header>
+
+    <section>
+        <h1>Un jour, Une licorne</h1>
+        <div id="main" class="p-15">
+            <section>
+                <h3 id="principe">Le principe</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dictum dapibus ante, eu aliquam ante euismod eleifend. Ut malesuada augue ut luctus pellentesque. Aenean id varius ipsum. Nunc malesuada ex ut ipsum interdum vestibulum. Integer facilisis finibus orci, sit amet pretium diam placerat vitae. Nunc auctor tincidunt mollis. Nullam quis turpis sed lorem elementum semper eget semper risus. In nec mauris aliquam, congue metus euismod, cursus leo. Vivamus laoreet commodo leo, ut cursus justo blandit in. Aenean pretium mi a auctor pulvinar. Mauris sodales sollicitudin sodales. Sed mollis sed lectus id facilisis. Quisque pharetra a purus eget porttitor. Proin rhoncus risus non mauris iaculis sodales. Pellentesque euismod dui erat, non sodales ipsum sollicitudin sed.</p>
+                <p> Donec nisi eros, luctus id pretium eget, consequat elementum risus. Fusce eleifend lacinia orci eu iaculis. Vestibulum vestibulum justo quis commodo congue. Aliquam purus leo, dictum in nisl at, pellentesque bibendum mi. Nulla convallis mi eget nisl convallis dictum. Vestibulum a massa lacus. Aenean quis enim diam.</p>
+                <!-- p>lorem[5] -->
+
+            </section><!-- fin sectiion principe -->
+
+            <section>
+                <h3 id="licorne">Nos licorne</h3>
+                <!-- div>figure*4>img+figcaption -->
+                <div id="unicorns_list" class="d-flex flex-justify-content-sp-a">
+                    <figure>
+                        <img src="evaluation_docs/img/unicorns/photo1.jpg" alt="My Unicorn - Lulu Confetty" class="img-200">
+                        <figcaption>Lulu Confetty</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="evaluation_docs/img/unicorns/photo2.jpg" alt="My Unicorn - Lapillon Magik" class="img-200">
+                        <figcaption>Lapillon Magik</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="evaluation_docs/img/unicorns/photo3.jpg" alt="My Unicorn - El Ninjacorn" class="img-200">
+                        <figcaption>El Ninjacorn</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="evaluation_docs/img/unicorns/photo4.jpg" alt="My Unicorn - Sweety Candy" class="img-200">
+                        <figcaption>Sweety Candy</figcaption>
+                    </figure>
+                </div>
+            </section><!-- fin sectiion licorne -->
+            <section>
+                <h3 id="nous_trouver">Nous trouver</h3>
+                <div class="d-flex gap-25">
+                    <div>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.9094122280826!2d2.21152571563972!3d48.8599377792877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e664cb22a29415%3A0xb5785da3aae22abe!2s8%20Boulevard%20Louis%20Loucheur%2C%2092150%20Suresnes!5e0!3m2!1sfr!2sfr!4v1602753216721!5m2!1sfr!2sfr" width="500" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div><!-- fin de la div pour l'iframe -->
+
+                    <div id="contact">
+                        <h4>Notre élevage de licornes est situé au </h4>
+                        <address>
+                            8, bd Loucheur <br> 
+                            92150 Suresnes <br>
+                            01 23 45 67 89
+                        </address>
+                        <div>
+                            <h4>Newsletter</h4>
+                            <form action="newsletter.php" method="POST">
+                                <label for="">Abonnez-vous simplement à notre newsletter mensuelle !</label><br>
+                            <input type="email" name="email" placeholder="Votre@email.fr"><br>
+                            <button type="submit">Valider</button>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </section><!-- fin sectiion nous trouver -->
+        </div><!-- fin mainfin section principe -->
+    </section><!-- fin section principle -->
+
+    <footer>
+        <p>2020 &copy; Colombbus - Suresnes</p>
+    </footer>
+</body>
+</html>
